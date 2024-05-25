@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Idea Evaluation Form</h1>
+        <form id="evaluationForm">
+            <section>
+                <h2>Problem and Solution</h2>
+                <label for="problem">What problem are you solving?</label>
+                <textarea id="problem" required></textarea>
+                <label for="solution">What is your solution?</label>
+                <textarea id="solution" required></textarea>
+                <label for="unique">What makes your solution unique?</label>
+                <textarea id="unique" required></textarea>
+                <label for="scalable">Is your solution scalable?</label>
+                <textarea id="scalable" required></textarea>
+            </section>
+            <section>
+                <h2>Product</h2>
+                <label for="product">What exactly is the product you are selling?</label>
+                <textarea id="product" required></textarea>
+                <label for="inputs">What inputs do you need to make this product?</label>
+                <textarea id="inputs" required></textarea>
+                <label for="production">How will you produce this product and how much will it cost?</label>
+                <textarea id="production" required></textarea>
+                <label for="protection">Can your product be protected?</label>
+                <textarea id="protection" required></textarea>
+            </section>
+            <section>
+                <h2>Market</h2>
+                <label for="customers">Who is your target customer?</label>
+                <textarea id="customers" required></textarea>
+                <label for="demand">Are customers willing to pay for your product?</label>
+                <textarea id="demand" required></textarea>
+                <label for="marketSize">What is the size of your target market?</label>
+                <textarea id="marketSize" required></textarea>
+                <label for="reach">How are you planning to reach customers?</label>
+                <textarea id="reach" required></textarea>
+                <label for="competitors">Who are your competitors?</label>
+                <textarea id="competitors" required></textarea>
+                <label for="barriers">Are there any barriers for entry?</label>
+                <textarea id="barriers" required></textarea>
+            </section>
+            <section>
+                <h2>Finance</h2>
+                <label for="model">What is your business model?</label>
+                <textarea id="model" required></textarea>
+                <label for="startupCost">How much money would you need to start?</label>
+                <textarea id="startupCost" required></textarea>
+                <label for="pricing">At what price can you sell this product?</label>
+                <textarea id="pricing" required></textarea>
+                <label for="operationalCost">What are the costs of your operations?</label>
+                <textarea id="operationalCost" required></textarea>
+            </section>
+            <section>
+                <h2>Execution</h2>
+                <label for="resources">Do you have the necessary resources?</label>
+                <textarea id="resources" required></textarea>
+                <label for="missingResources">Are the resources you're missing critical for success?</label>
+                <textarea id="missingResources" required></textarea>
+                <label for="plan">What is your plan to obtain missing resources?</label>
+                <textarea id="plan" required></textarea>
+            </section>
+            <button type="submit">Evaluate</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your Evaluation Score</h2>
+            <p id="score"></p>
+            <p id="recommendation"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
